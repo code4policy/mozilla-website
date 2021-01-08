@@ -1,0 +1,16 @@
+/* element selector*/
+p {
+	color: black;
+}
+
+/* class selector */
+.quote {
+	color:red;
+	border: 1px solid black;
+}
+
+/* id selector */
+#mainquote{
+	color: green;
+	border: 5px solid black;
+}
