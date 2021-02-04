@@ -1,3 +1,9 @@
+
+p {
+  width: 500px;
+  border: 1px solid black;
+}
+=======
 /* element selector*/
 p {
 	color: black;
@@ -10,7 +16,7 @@ p {
 }
 
 /* id selector */
-#mainquote{
+.mainquote{
 	color: green;
 	border: 5px solid black;
 }
