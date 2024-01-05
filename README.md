@@ -2,6 +2,9 @@
 
 This is just an empty repository containing a README and a picture of a fox. It also contains a HTML file that has a website with just a title.
 
+
+## Instructions
+
 Step 1 - HTML
 1. Make a branch called `learn-html`
 2. Follow this [HTML
