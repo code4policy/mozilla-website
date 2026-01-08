@@ -19,7 +19,14 @@ git checkout -b xyz
 ```
 Now, when you run `git branch` you should see that the current branch is `xyz`. 
 
-Note! To switch to an existing branch, you'll drop the `-b` flag from the `git checkout` command. E.g. to switch back to `main`, you'll use
+You can push the `xyz` branch to github with
+```
+git push origin xyz
+```
+Once you've done so, visit your GitHub repo to make sure the push worked!
+
+
+**Note**: to switch to an existing branch, you'll drop the `-b` flag from the `git checkout` command. E.g. to switch back to `main`, you'll use
 ```
 git checkout main
 ```
