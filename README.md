@@ -3,48 +3,57 @@
 This is just an empty repository containing a README and a picture of a fox. It also contains a HTML file that has a website with just a title.
 
 
-## Instructions
 
-### Step 0 - How to make a branch
+## Assignment Part 1 -- HTML
+### 1. Make a branch called `learn-html`
 
-To make a branch called `xyz`, cd into the git repo you'd like to branch. 
+How? 
 
-First, check which branch you're currently on (likely main)
+`cd` into your `mozilla-website` project directory. 
+
+List all of the branches in the repo:
 ```
 git branch
 ```
-To create a new branch (and switch to it), enter the following command into your console:
+You should only see a `main` branch right now. To create a new branch named `learn-html` run
 ```
-git checkout -b xyz
+git branch -c learn-html
 ```
-Now, when you run `git branch` you should see that the current branch is `xyz`. 
+Now list all the repository branches again
+```
+git branch
+```
+Do you see the new `learn-html` branch? Notice that the `main` branch is starred, which means that we're currently working within it. Creating a new branch with `git branch -c` will not automatically switch you into it. 
 
-You can push the `xyz` branch to github with
+To switch into the `learn-html` branch, run
 ```
-git push origin xyz
+git checkout learn-html
 ```
-Once you've done so, visit your GitHub repo to make sure the push worked!
+Try listing the repository branches again. You should see that `learn-html` branch is now starred. 
 
 
-**Note**: to switch to an existing branch, you'll drop the `-b` flag from the `git checkout` command. E.g. to switch back to `main`, you'll use
-```
-git checkout main
-```
-And back to `xyz`: 
-```
-git checkout xyz
-```
 
-### Step 1 - HTML
-1. Make a branch called `learn-html`
-2. Follow this [HTML
-Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics). Make sure you make a handful of commits along the way inside the `learn-html` branch.
-3. Push the branch to GitHub and merge it into `main`
-4. Switch to the main branch on your computer locally and pull the `main` branch
+### 2.  Follow this HTML Tutorial
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics). 
 
-### Step 2 - CSS 
+**Make sure you make a handful of commits to the `learn-html` branch while working through the tutorial**.
+### 3. Push the branch to GitHub and merge it into `main`
+To push the `learn-html` branch, run `git branch` to make sure you're working on the right branch. Then run
+```
+git push origin learn-html
+```
+This will push the current local branch (`learn-html`) to the remote repository on Github. 
+
+Now create a pull request from the `learn-html` branch to `main`. 
+
+### 4. Switch to the main branch on your computer locally and pull the `main` branch. 
+You learned how to switch branches above. To pull the `main` branch down, run 
+```
+git pull origin main
+````
+
+## Assignment Part 2 -- CSS 
 1. Make a branch called `learn-css`
 2. Follow this [CSS Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics). Make sure you make a handful of commits along the way inside the `learn-css` branch.
 3. Push the branch to GitHub and merge it into `main`
 4. Switch to the main branch on your computer locally and pull the `main` branch
-
